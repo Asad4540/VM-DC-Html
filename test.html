@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VM Data Checker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c2def52ca0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #080710;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="relative flex items-center justify-center min-h-screen">
+    <div class="absolute w-[430px] h-[520px]">
+        <div
+            class="absolute w-[200px] h-[200px] bg-gradient-to-r from-[#fff] to-[#fff] rounded-full left-[-80px] top-[-80px]">
+        </div>
+        <div
+            class="absolute w-[200px] h-[200px] bg-gradient-to-r from-[#ff512f] to-[#FFCB48] rounded-full right-[-30px] bottom-[-80px]">
+        </div>
+    </div>
+
+    <form
+        class="relative w-[400px] h-[520px] p-[20px_35px] bg-[rgba(255,255,255,0.13)] rounded-[10px] backdrop-blur-[10px] border-[2px] border-[rgba(255,255,255,0.1)] shadow-[0_0_40px_rgba(8,7,16,0.6)]">
+        <img src="images/logo.webp" class="mx-auto" style="width: 60%;" alt="">
+        <p class="text-3xl text-yellow-400 font-bold text-center mt-3">VM Data Checker</p>
+        <label for="username" class="block mt-[30px] text-[16px] font-medium text-white">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username"
+            class="block w-full h-[50px] mt-2 p-[0_10px] bg-[rgba(255,255,255,0.07)] rounded-[3px] text-[14px] font-light text-white placeholder-[#e5e5e5]">
+        <label for="password" class="block mt-[10px] text-[16px] font-medium text-white">Password</label>
+        <input type="password" placeholder="Password" id="password"
+            class="block w-full h-[50px] mt-2 p-[0_10px] bg-[rgba(255,255,255,0.07)] rounded-[3px] text-[14px] font-light text-white placeholder-[#e5e5e5]">
+        <button
+            class="block w-full mt-[30px] py-[12px] bg-yellow-400 text-[#080710] text-[18px] font-bold rounded-[5px] cursor-pointer hover:bg-yellow-500">Log
+            In</button>
+        <div class="flex mt-[20px]">
+            <div
+                class="flex-1 p-[5px_10px_10px_5px] bg-[rgba(255,255,255,0.27)] text-center text-[#eaf0fb] cursor-pointer hover:bg-[rgba(255,255,255,0.47)]">
+                <i class="fa-solid fa-key mr-2"></i>Forgot Password
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>
